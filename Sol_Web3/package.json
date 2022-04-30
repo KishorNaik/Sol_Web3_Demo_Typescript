@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --respawn --pretty --transpile-only Program.ts",
-    "debug": "ts-node-dev --inspect=4321 --pretty --transpile-only Program.ts"
+    "start:get-balance": "ts-node-dev --respawn --pretty --transpile-only ./src/Examples/GetNativeCoinBalance.ts",
+    "start:conversion": "ts-node-dev --respawn --pretty --transpile-only ./src/Examples/UnitConversionExample.ts",
+    "debug": "ts-node-dev --inspect=4321 --pretty --transpile-only ./src/Examples/UnitConversionExample.ts"
   },
   "keywords": [],
   "author": "",
