@@ -8,3 +8,7 @@ export const BigNumberToString=(value:BN):string=>{
     return value?.toFixed();
 }
 
+export const BigNumberToNumber=(value:BN):number=>{
+    return value?.toNumber();
+}
+
