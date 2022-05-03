@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:get-balance": "ts-node-dev --respawn --pretty --transpile-only ./src/Examples/BalanceExample.ts",
     "start:conversion": "ts-node-dev --respawn --pretty --transpile-only ./src/Examples/UnitConversionExample.ts",
+    "start:checksumaddress":"ts-node-dev --respawn --pretty --transpile-only ./src/Examples/CheckSumAddressExample.ts",
     "debug": "ts-node-dev --inspect=4321 --pretty --transpile-only ./src/Examples/BalanceExample.ts"
   },
   "keywords": [],

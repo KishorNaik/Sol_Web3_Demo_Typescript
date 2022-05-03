@@ -2,6 +2,7 @@ import Web3 from 'web3';
 import { BalanceFacade } from './Facade/BalanceFacade';
 import { UnitConversionFacade } from './Facade/UnitConversionFacade';
 import { UnitConverterFacade } from './Facade/UnitConverterFacade';
+import { UtilityFacade } from './Facade/UtilityFacade';
 import {FromEtherBNToGWeiBNProxyAsync, FromEtherBNToWeiBNProxyAsync, FromFullUnitToSmallUnitProxyAsync, FromGweiBNToEtherBNProxyAsync, FromGweiBNToWeiBNProxyAsync, FromSmallUnitToFullUnitProxyAsync, FromWeiBNToEtherBNProxyAsync, FromWeiBNToGweiBNProxyAsync } from './Proxy/UnitConvertProxy';
 
 export default class Web3Helpers{
@@ -37,4 +38,6 @@ export default class Web3Helpers{
     public UnitConverter=new UnitConverterFacade();
 
     public UnitConversion=new UnitConversionFacade();
+
+    public Utility=new UtilityFacade(this);
 }
